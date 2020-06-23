@@ -1,14 +1,24 @@
 import React from 'react';
-import { Segment } from 'semantic-ui-react';
 import './PointingSegment.css';
+import { ObjectItem } from '../index';
 
-export const PointingSegment: React.FC = ({ children }) => {
-  return (
-    <Segment raised className="pointing-segment left pointing label">
-      {children}
-    </Segment>
-  );
+import PointerBox from './UI/PointerBox/PointerBox';
 
-  // alternative approach
-  // return <div className="pointing-segment pointing-label-right-side">{children}</div>
-};
+interface IPointingSegment {
+  item: ObjectItem;
+  children: object;
+}
+
+export const PointingSegment: React.FC<IPointingSegment> = ({
+  item: { title, description, logoURL, short_description },
+  children,
+}) => (
+  <PointerBox
+    title={title}
+    description={description}
+    short_description={short_description}
+    logoURL={logoURL}
+  >
+    {children}
+  </PointerBox>
+);

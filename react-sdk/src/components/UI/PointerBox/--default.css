@@ -1,0 +1,53 @@
+.pointerbox {
+	height: min-content;
+	width: min-content;
+  
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .pointerbox__info {
+	height: min-content;
+	width: 120px;
+	padding: 10px;
+	border-radius: 7px;
+	background-color: white;
+  
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .pointerbox__logo {
+	  position: absolute;
+	  top: -25px;
+	  height: 50px;
+	  width: 50px;
+	  border-radius: 50%;
+	  border: 2px solid rgb(255, 255, 255);
+	  background-size: cover;
+  }
+  
+  .pointerbox__title {
+	  font-size: 13px;
+	  padding: 20px 0px 4px 0px;
+	  margin: 0px;
+	  text-align: center;
+  }
+  
+  .pointerbox__description {
+	  font-size: 11px;
+	  color: black;
+	  opacity: 0.5;
+	  line-height: 14px;
+	  text-align: center;
+  }
+  
+  .pointerbox svg {
+	  position: relative;
+	  top: -1px;
+  }
+  
+  
+  

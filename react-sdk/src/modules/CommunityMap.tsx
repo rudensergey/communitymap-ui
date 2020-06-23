@@ -296,5 +296,9 @@ const defaultObjectRender: RenderObjectCallback = ({
       expanded={expanded}
     />
   );
-  return expanded ? comp : <PointingSegment>{comp}</PointingSegment>;
+  return expanded ? (
+    comp
+  ) : (
+    <PointingSegment item={item}>{comp}</PointingSegment>
+  );
 };
